@@ -1,0 +1,64 @@
+/* .font-medium{
+    font-size: medium;
+} */
+
+.font-medium {
+  font-size: 2rem;
+}
+
+.fontSide4rem{
+  font-size: 4rem;
+}
+
+/* .font-medium {
+  font-size: xx-large;
+} */
+
+.right-gap {
+  gap: 95px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-550px {
+  width: 550px;
+}
+
+.box1-col {
+  background-color: rgb(253, 95, 8);
+}
+
+.box2-col {
+  background-color: rgb(224, 225, 225);
+}
+
+.box3-col {
+  background-color: rgb(252, 200, 89);
+}
+
+
+/* box bold  */
+
+.box-primaryBold{
+  font-weight:lighter;
+
+}
+
+.box-secondaryBold{
+  font-weight:800;
+
+}
