@@ -82,6 +82,7 @@ nav {
   display: flex;
   width: 100vw;
   margin-top: 0.5px;
+  position: relative;
 }
 
 #page1 > .container {
@@ -138,6 +139,12 @@ nav {
 }
 
 #page2 {
+  position: absolute;
+  right: 0;
+  top: 80%;
+  height: 100%;
+  width: 100vw;
+  padding: 45px 0px;
   display: flex;
   justify-content: flex-end;
   background-color: black;
@@ -156,6 +163,7 @@ nav {
   padding: 18px 40px;
   text-transform: uppercase;
 }
+
 
 .box i {
   font-size: small;
