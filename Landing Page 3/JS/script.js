@@ -54,7 +54,7 @@ gsap.from('.box', {
     scrollTrigger: {
         trigger: '#page1',
         scroller:"body",
-        markers: true,
+        // markers: true,
 
         scrub: 1,
 
