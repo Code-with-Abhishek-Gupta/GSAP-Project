@@ -10,8 +10,8 @@ document.addEventListener('mousemove', function (dets) {
     cur.style.top = dets.y + "px";
 
 
-    blur.style.left = dets.x -  200 +"px";
-    blur.style.top = dets.y -200 + "px";
+    blur.style.left = dets.x - 200 + "px";
+    blur.style.top = dets.y - 200 + "px";
     // blur.style.top = dets.y + "px";
 
 
@@ -49,7 +49,7 @@ gsap.to("nav", {
 });
 
 gsap.to('main', {
-    backgroundColor: "black", 
+    backgroundColor: "black",
     scrollTrigger: {
         scroller: "body",
         trigger: "main",
@@ -64,7 +64,7 @@ gsap.to('main', {
 
 
 gsap.to('#page1 video', {
-  height:"120vh",
+    height: "120vh",
     scrollTrigger: {
         trigger: "#page1",
         scroller: "body",
@@ -78,20 +78,20 @@ gsap.to('#page1 video', {
 })
 
 gsap.to('#page2', {
-    backgroundColor: "black", 
+    backgroundColor: "black",
     y: -200,
     duration: 1,
-    zIndex:5,
-    backgroundColor:"black",
+    zIndex: 5,
+
 
     scrollTrigger: {
         trigger: "#page2",
         scroller: "body",
-        markers:true, 
+        markers: true,
         start: "top 20%",
         end: "top 21%",
         scrub: 2,
-        scale:2,
-        
+        scale: 2,
+
     }
 })
