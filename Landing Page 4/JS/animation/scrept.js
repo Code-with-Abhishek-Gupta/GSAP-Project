@@ -64,7 +64,7 @@ gsap.to('main', {
 
 
 gsap.to('#page1 video', {
-    height: "120vh",
+    height: "115vh",
     scrollTrigger: {
         trigger: "#page1",
         scroller: "body",
@@ -77,19 +77,44 @@ gsap.to('#page1 video', {
     }
 })
 
-gsap.to('#page2', {
-    backgroundColor: "black",
-    y: -200,
-    duration: 1,
-    zIndex: 5,
 
+
+
+
+
+
+gsap.to('#page2 , #page3 ', {
+  
+    y: -180,
+    duration: 2,
+
+   
+
+    scrollTrigger: {
+        trigger: "#page2",
+        scroller: "body",
+        // markers: true, 
+        start: "top 40%",
+        end: "top 42%",
+        scrub: 2,
+        scale: 2,
+
+    }
+})
+
+
+gsap.from('#page2 ', {
+
+    opacity: 0.8,
+    backgroundColor: "black",
+    background: "none",
 
     scrollTrigger: {
         trigger: "#page2",
         scroller: "body",
         markers: true,
-        start: "top 20%",
-        end: "top 21%",
+        start: "top 55%",
+        end: "top 58%",
         scrub: 2,
         scale: 2,
 
