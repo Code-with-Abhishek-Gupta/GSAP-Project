@@ -293,30 +293,28 @@ p {
 
 #page3 {
   display: flex;
-  justify-content: center;
+
   width: 100vw;
-  height: 100vh;
-  flex-direction: row;
+  height: 60vh;
+  flex-direction: column;
   position: relative;
 }
 .page3-box {
   display: flex;
   flex-direction: column;
   z-index: 55;
-  width: 90%;
-  height: 60%;
+
+  width: 23%;
+  height: 300px;
   border-radius: 4%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-
 .page3-box:hover {
-  transform: rotate3d(-1,1,0,20deg);
-
+  transform: rotate3d(-1, 1, 0, 20deg);
 }
-
 
 #box-img1 {
   background-image: url("../Assets/Image/card1.avif");
@@ -350,7 +348,7 @@ p {
   font-weight: 800;
   text-transform: uppercase;
   white-space: nowrap;
-  font-size: 40px;
+  font-size: 2rem;
   padding: 40px;
   padding-top: 80px;
 }
@@ -359,4 +357,84 @@ p {
   padding: 10px 18px;
   font-size: 1rem;
   white-space: wrap;
+}
+
+#green-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 25%;
+  align-items: center;
+  padding: 0px 12px;
+  z-index: 55;
+  background: linear-gradient(to left bottom, #a0d01c, #98bd31);
+}
+
+#green-div > img {
+  object-fit: cover;
+  width: 10%;
+  height: 100%;
+}
+
+#green-div > h4 {
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+/* page 4  */
+
+#page4 {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  /* background-color: rgb(212, 208, 216); */
+
+  gap: 85px;
+
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  z-index: 1;
+
+  text-align: center;
+
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+#page4-part2 {
+  padding: 0px 50px;
+}
+
+#page4-top-container {
+  /* background-color: blueviolet; */
+  gap: 25px;
+  padding: 0px 45px;
+}
+#top-page-div,
+#bottom-page-div {
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+
+#bottom-page-div {
+  justify-content: end;
+  margin-right: 65px;
+}
+
+#top-page-div,
+#bottom-page-div > img {
+  width: 60px;
+  height: 60px;
+}
+
+#center-page-div p {
+  font-size: 1.5rem;
+}
+
+#center-page-div {
+  padding: 12px 90px;
 }

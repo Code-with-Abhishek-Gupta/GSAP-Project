@@ -83,12 +83,12 @@ gsap.to('#page1 video', {
 
 
 
-gsap.to('#page2 , #page3 ', {
-  
+gsap.to('#page2 , #page3 , #page4 ', {
+
     y: -180,
     duration: 2,
 
-   
+
 
     scrollTrigger: {
         trigger: "#page2",
@@ -112,11 +112,106 @@ gsap.from('#page2 ', {
     scrollTrigger: {
         trigger: "#page2",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 55%",
         end: "top 58%",
         scrub: 2,
         scale: 2,
 
     }
+})
+
+
+
+var nav_li = document.querySelectorAll("nav li");
+console.log(nav_li)
+nav_li.forEach(function (elem) {
+    elem.addEventListener('mouseenter', function () {
+        cur.style.scale = 2;
+        cur.style.border = "1px solid white";
+        cur.style.backgroundColor = "transparent"
+    })
+
+
+    elem.addEventListener('mouseleave', function () {
+        cur.style.scale = 1;
+        cur.style.border = "0px solid #95C11E";
+        cur.style.backgroundColor = "#95C11E";
+    })
+})
+
+gsap.from('#page2 img , #page2-center', {
+    y: 50,
+    opacity: 0,
+    stagger: 0.5,
+
+    scrollTrigger: {
+        trigger: "#page2",
+        // markers: "true",
+        scroller: "body",
+        start: "top 30%",
+        end: "top  35%",
+
+    }
+
+})
+
+
+gsap.from('#page3 , .page3-box', {
+    y: 50,
+    opacity: 0,
+    scale: 1.8,
+
+
+    scrollTrigger: {
+        trigger: "#page3",
+        // markers: "true",
+        scroller: "body",
+        start: "top 0%",
+        end: "top  1%",
+
+    }
+
+})
+
+
+
+gsap.from('#page4 #col-1', {
+    y: -190,
+    x: -190,
+
+    
+    scrollTrigger: {
+        trigger: "#page4",
+        markers: "true",
+        scroller: "body",
+        markers:true,
+        start: "top 35%",
+        end: "top  4%5",
+        scrub: "true",
+    
+
+    }
+
+})
+
+
+
+gsap.from('#page4 #col-2', {
+    y: -70,
+    x: -70,
+
+
+    scrollTrigger: {
+        trigger: "#page4",
+        markers: "true",
+        scroller: "body",
+        markers: true,
+        start: "top 35%",
+        end: "top  50",
+        scrub: 1,
+
+
+    }
+
 })
