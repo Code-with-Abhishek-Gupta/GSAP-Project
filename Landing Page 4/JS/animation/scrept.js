@@ -177,19 +177,19 @@ gsap.from('#page3 , .page3-box', {
 
 
 gsap.from('#page4 #col-1', {
-    y: -190,
-    x: -190,
+    y: -80,
+    x: -80,
 
-    
+
     scrollTrigger: {
         trigger: "#page4",
         markers: "true",
         scroller: "body",
-        markers:true,
+        markers: true,
         start: "top 35%",
         end: "top  4%5",
-        scrub: "true",
-    
+        scrub: 4,
+
 
     }
 
@@ -198,8 +198,8 @@ gsap.from('#page4 #col-1', {
 
 
 gsap.from('#page4 #col-2', {
-    y: -70,
-    x: -70,
+    y: 70,
+    x: 70,
 
 
     scrollTrigger: {
@@ -209,7 +209,7 @@ gsap.from('#page4 #col-2', {
         markers: true,
         start: "top 35%",
         end: "top  50",
-        scrub: 1,
+        scrub: 4,
 
 
     }
