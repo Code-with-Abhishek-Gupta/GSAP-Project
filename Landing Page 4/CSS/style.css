@@ -10,6 +10,23 @@
   font-family: "Roboto", sans-serif;
 }
 
+*::selection{
+ background-color: white;
+ color: #98bd31;
+
+
+}
+
+body::-webkit-scrollbar{
+  display: block;
+  width: 5px;
+  background-color: #95c11e;
+}
+
+body::-webkit-scrollbar-thumb{
+background-color: wheat;
+
+}
 main {
   height: 500vh;
   width: 100%;
@@ -440,32 +457,163 @@ p {
 }
 
 #page5 {
-  display: flex;
   width: 100vw;
-  flex-direction: column;
-  gap: 45px;
-  background-color: chocolate;
   height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#page5 h1 {
+  font-size: 70px;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  position: absolute;
+  top: 7%;
+  z-index: 4;
+}
+
+.page_5-container {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  height: 250px;
+  /* background-color: aqua; */
 }
 
 .elem {
-  height: 50%;
+  height: 110px;
+  width: 300px;
+
+  transition: ease 0.8s;
+  margin-top: 60px;
   display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  background-color: #95c11e;
+  border-radius: 8%;
+  position: relative;
   flex-direction: column;
   /* overflow: hidden; */
-  width: 100%;
 }
 
+.elem h2:hover {
+  background-color: transparent;
+  scale: 1;
+  color: white;
+}
 .elem h2 {
+  scale: 1.1;
+  border-radius: 8%;
   height: 100%;
   width: 100%;
-  /* background-color: #95c11e; */
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #95c11e;
+  display: flex;
+  align-items: center;
+  color: #000;
+  z-index: 10;
+  position: absolute;
+  justify-content: center;
+}
+
+.elem img {
+  border-radius: 8%;
+  height: 100%;
+  width: 100%;
+  scale: 1.1;
+  transition: ease-in 0.8s;
+}
+
+.elem:hover img {
+  scale: 1;
+}
+
+footer {
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 150px;
+  padding: 0 100px;
+  background: linear-gradient(to left bottom, #119f3a, #ace022);
+}
+
+footer img {
+  height: 100%;
+  width: 10%;
+  object-fit: cover;
+}
+
+#arrow {
+  width: 110px;
+  height: 110px;
+  /* background-color: red; */
+  position: absolute;
+  top: 78%;
+  left: -2%;
+  z-index: 99;
+  bottom: -2%;
+  border-radius: 50%;
+  border: 1px solid #95c11e;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.elem img {
-  height: 350px;
-  width: 250px;
+#arrow:hover {
+  scale: 0.5;
+  transition: ease-in 0.5s;
+  background-color: #95c11e;
+}
+#arrow i {
+  font-size: 2rem;
+}
+
+#f1 img {
+  height: 100px;
+}
+#f1,
+#f2,
+#f3,
+#f4 {
+  width: fit-content;
+  position: relative;
+  z-index: 99;
+  /* background-color: red; */
+}
+#f2 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+#f3 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+#f4 h4 {
+  font-size: 1vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 8px;
 }

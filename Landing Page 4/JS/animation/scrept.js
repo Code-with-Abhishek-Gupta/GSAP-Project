@@ -83,7 +83,7 @@ gsap.to('#page1 video', {
 
 
 
-gsap.to('#page2 , #page3 , #page4 ', {
+gsap.to('#page2 , #page3 , #page4  ', {
 
     y: -180,
     duration: 2,
@@ -158,17 +158,17 @@ gsap.from('#page2 img , #page2-center', {
 
 
 gsap.from('#page3 , .page3-box', {
-    y: 50,
+    // y: 50,
     opacity: 0,
     scale: 1.8,
 
 
     scrollTrigger: {
-        trigger: "#page3",
+        trigger: "#page2",
         // markers: "true",
         scroller: "body",
-        start: "top 0%",
-        end: "top  1%",
+        start: "top -10%",
+        end: "top  -8%",
 
     }
 
@@ -185,7 +185,7 @@ gsap.from('#page4 #col-1', {
         trigger: "#page4",
         markers: "true",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 35%",
         end: "top  4%5",
         scrub: 4,
@@ -206,10 +206,30 @@ gsap.from('#page4 #col-2', {
         trigger: "#page4",
         markers: "true",
         scroller: "body",
-        markers: true,
+        // markers: true,
         start: "top 35%",
         end: "top  50",
         scrub: 4,
+
+
+    }
+
+})
+
+
+gsap.from('#page5  h1', {
+    y: 80,
+
+
+
+    scrollTrigger: {
+        trigger: "#page5 h1",
+        scroller: "body",
+        // markers: true,
+        start: "top 75%",
+        end: "top 70%",
+        scrub: 2,
+        scale: 2,
 
 
     }
